@@ -305,9 +305,11 @@ func start_level() -> void:
 	shield_span = deg_to_rad(clampf(float(GlobalData.mods.get("shield_span_deg", 90.0)), 15.0, 120.0))
 	note_span = deg_to_rad(clampf(float(GlobalData.mods.get("note_span_deg", 90.0)), 15.0, 120.0))
 	_load_chart()
-	audio.stream = GlobalData.library.load_stream(GlobalData.library.find(GlobalData.selected_name))
-	if audio.stream == null and ResourceLoader.exists(GlobalData.selected_music):
-		audio.stream = _AudioLoader.load_stream(GlobalData.selected_music)  # 兜底旧路径
+	# 教程: _load_tutorial 已挂合成静音音轨, 不得覆盖为选中歌曲(教程须纯静音)
+	if not GlobalData.tutorial:
+		audio.stream = GlobalData.library.load_stream(GlobalData.library.find(GlobalData.selected_name))
+		if audio.stream == null and ResourceLoader.exists(GlobalData.selected_music):
+			audio.stream = _AudioLoader.load_stream(GlobalData.selected_music)  # 兜底旧路径
 	if ui:
 		ui.get_node("歌名").text = level_name
 	game_over = false
