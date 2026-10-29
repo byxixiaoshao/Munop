@@ -9,6 +9,8 @@
 android/build/.gradle/
 android/build/build/
 android/build/local.properties
+# Godot 导出时生成的引擎模板库(超 GitHub 体积限制, 导出时自动重新生成)
+android/build/libs/
 
 # Windows / Office 临时文件
 ~*
