@@ -1,4 +1,4 @@
-# 触音律动 音频分析器 (audio_analyzer)
+# 音符载荷 音频分析器 (audio_analyzer)
 
 GDExtension 插件: 把 mp3 解析成音游谱面数据（onset 音符点、BPM/tempo map、节拍、段落强度分级）。
 算法核心为 C++（STFT + 分频段谱通量 + 自适应峰值拾取 + comb 自相关 BPM），约 0.9s 分析 4 分钟歌曲。

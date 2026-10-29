@@ -1,4 +1,4 @@
-// 触音律动 - 音频解析 CLI(v4)
+// 音符载荷 - 音频解析 CLI(v4)
 // 输入: mp3 文件路径  输出: JSON 谱面数据
 // 算法核心在 analyzer_core.cpp(v4), 本文件只负责 minimp3 解码 + JSON 输出,
 // 供离线批量生成谱面与 librosa 交叉验证; 游戏内实时分析走 GDExtension(audio_analyzer/gdextension)。

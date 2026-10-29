@@ -1,5 +1,5 @@
 #pragma once
-// 触音律动 - 音频分析器 GDExtension 封装
+// 音符载荷 - 音频分析器 GDExtension 封装
 // 用法(GDScript):
 //   var analyzer := AudioAnalyzer.new()
 //   var chart := analyzer.analyze_file("res://资源/towards_the_light.mp3", {})

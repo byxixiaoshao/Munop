@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# 触音律动 audio_analyzer GDExtension 构建
+# 音符载荷 audio_analyzer GDExtension 构建
 # 用法: 在本目录执行 python -m SCons platform=windows target=template_debug arch=x86_64
 # 或直接运行上级目录的 build_addon.bat
 import os

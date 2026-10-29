@@ -1,4 +1,4 @@
-# 触音律动
+# 音符载荷
 
 一款 360° 环形音乐节奏游戏, 由 Godot 4.7 开发, 支持 Windows 与 Android。
 
@@ -81,6 +81,11 @@ scons platform=android arch=arm64 target=template_release
 ├── 资源/                      # 字体/封面等静态资源
 └── android/build/            # Android 构建模板(含自定义权限)
 ```
+
+## 声明
+
+- 本项目没有也不会参与任何侵权行为
+- 本项目不提供任何互联网服务, 也不会窃取任何用户个人隐私
 
 ## 开源许可
 
