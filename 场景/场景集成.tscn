@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bdxidag3qjfv1"]
+
+[ext_resource type="PackedScene" uid="uid://dv3wn6k7pm2c3" path="res://场景/主界面UI.tscn" id="1_66i8u"]
+[ext_resource type="PackedScene" uid="uid://c2dring2dmain" path="res://场景/主场景2D.tscn" id="2_2ljmu"]
+[ext_resource type="PackedScene" uid="uid://dt0hyeebe3no8" path="res://场景/UI.tscn" id="3_2uen8"]
+[ext_resource type="PackedScene" uid="uid://d0p0i24dbtxy5" path="res://场景/结算.tscn" id="4_2uen8"]
+
+[ext_resource type="Script" path="res://脚本/场景集成.gd" id="5_jicheng"]
+[ext_resource type="Script" path="res://脚本/点击特效.gd" id="6_dianji"]
+
+[node name="场景集成" type="Control" unique_id=2125308918]
+script = ExtResource("5_jicheng")
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="主界面ui" parent="." unique_id=1108183950 instance=ExtResource("1_66i8u")]
+layout_mode = 1
+
+[node name="开始游戏" parent="主界面ui" index="3" unique_id=1404140182]
+offset_right = 0.0026855469
+
+[node name="主场景2D" parent="." unique_id=2092787602 instance=ExtResource("2_2ljmu")]
+
+[node name="Ui" parent="." unique_id=1471141885 instance=ExtResource("3_2uen8")]
+layout_mode = 1
+
+[node name="分数" parent="Ui" index="4" unique_id=1515917215]
+offset_bottom = -19.999756
+
+[node name="结算" parent="." unique_id=927594680 instance=ExtResource("4_2uen8")]
+layout_mode = 1
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="点击特效层" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="点击特效" type="Node2D" parent="点击特效层"]
+script = ExtResource("6_dianji")
+
+[editable path="主界面ui"]
+[editable path="主场景2D"]
+[editable path="Ui"]
+[editable path="结算"]

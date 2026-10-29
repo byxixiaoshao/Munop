@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://dt0hyeebe3no8"]
+
+[ext_resource type="Script" path="res://脚本/虚拟摇杆.gd" id="1_vjoy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6c60k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rtp12"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v08bl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hujyf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_exkm0"]
+bg_color = Color(7.123351e-06, 0.65649456, 0.86243534, 1)
+border_width_right = 24
+border_width_bottom = 24
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+corner_radius_bottom_right = 24
+corner_detail = 4
+expand_margin_right = 24.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_exkm0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cvhht"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6c60k"]
+bg_color = Color(0.004019165, 0.004019165, 0.004019165, 1)
+draw_center = false
+border_width_left = 32
+border_width_top = 32
+border_width_right = 32
+border_width_bottom = 32
+border_color = Color(0, 0, 0.9411765, 1)
+border_blend = true
+corner_radius_top_left = 128
+corner_radius_top_right = 128
+corner_radius_bottom_right = 128
+corner_radius_bottom_left = 128
+shadow_color = Color(0, 0, 0.9411765, 1)
+shadow_size = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtp12"]
+bg_color = Color(4.428029e-06, 0.64191264, 0.9296158, 1)
+draw_center = false
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+shadow_color = Color(1, 1, 1, 1)
+shadow_size = 6
+
+[node name="Ui" type="Control" unique_id=1471141885]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="连击数" type="Label" parent="." unique_id=1908504182]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -353.0
+offset_top = 148.0
+offset_right = -20.0
+offset_bottom = 236.00052
+grow_horizontal = 0
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 0.6392157)
+theme_override_constants/shadow_outline_size = 1
+theme_override_font_sizes/font_size = 64
+text = "combo xxx"
+
+[node name="暂停按钮" type="Button" parent="." unique_id=523679488]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 164.0
+offset_bottom = 164.0
+theme_override_font_sizes/font_size = 96
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6c60k")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rtp12")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_v08bl")
+text = "II"
+
+[node name="进度条" type="ProgressBar" parent="." unique_id=676249885]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 24.0
+grow_horizontal = 2
+theme_override_styles/background = SubResource("StyleBoxEmpty_hujyf")
+theme_override_styles/fill = SubResource("StyleBoxFlat_exkm0")
+value = 100.0
+show_percentage = false
+
+[node name="歌名" type="Label" parent="." unique_id=1291694292]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -131.0
+offset_right = 340.0
+offset_bottom = -20.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxEmpty_exkm0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cvhht")
+text = "这是歌名"
+
+[node name="分数" type="Label" parent="." unique_id=1515917215]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -267.0
+offset_top = -108.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 64
+text = "xxxxxxx"
+
+[node name="移动端摇杆" type="VirtualJoystick" parent="." unique_id=1829159471]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -296.0
+offset_top = -296.0
+offset_right = -296.0
+offset_bottom = -296.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/normal_joystick = SubResource("StyleBoxFlat_6c60k")
+theme_override_styles/normal_tip = SubResource("StyleBoxFlat_rtp12")
+theme_override_styles/pressed_joystick = SubResource("StyleBoxFlat_6c60k")
+theme_override_styles/pressed_tip = SubResource("StyleBoxFlat_rtp12")
+joystick_size = 256.0
+tip_size = 128.0
+initial_offset_ratio = Vector2(0, 0)
+script = ExtResource("1_vjoy")

@@ -1,0 +1,381 @@
+[gd_scene format=3 uid="uid://dv3wn6k7pm2c3"]
+
+[ext_resource type="Script" uid="uid://dpcucpopm6lpe" path="res://脚本/主界面UI.gd" id="0"]
+[ext_resource type="Texture2D" uid="uid://cnnbyo8l4tpbw" path="res://资源/默认封面.png" id="2_4ieyd"]
+[ext_resource type="Shader" uid="uid://beiiy1yggi6cq" path="res://着色器/模糊背景.gdshader" id="2_kb3c7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2uen8"]
+shader = ExtResource("2_kb3c7")
+shader_parameter/blur_strength = 1.0000000475
+shader_parameter/darken = 0.50000002375
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_plgim"]
+bg_color = Color(0.047058824, 0.05490196, 0.08235294, 1)
+border_width_bottom = 120
+border_color = Color(0, 0.0027698036, 0.012617188, 0)
+border_blend = true
+shadow_offset = Vector2(0, 7.31)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ro0ma"]
+bg_color = Color(0.047703147, 0.05573804, 0.083372734, 1)
+border_width_top = 4
+border_color = Color(0, 0.5058824, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eow5t"]
+content_margin_left = 58.0
+content_margin_right = 58.0
+bg_color = Color(0.003921569, 0, 0.12156863, 0)
+draw_center = false
+skew = Vector2(-0.225, 0)
+border_width_left = 24
+border_width_top = 16
+border_width_right = 9
+border_width_bottom = 2
+border_color = Color(0.35686275, 0.8784314, 1, 1)
+border_blend = true
+corner_radius_top_right = 96
+corner_radius_bottom_left = 96
+shadow_color = Color(0.35686275, 0.8784314, 1, 0.12156863)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ieyd"]
+content_margin_left = 58.0
+content_margin_right = 58.0
+bg_color = Color(0.003921569, 0, 0.12156863, 0)
+draw_center = false
+skew = Vector2(-0.225, 0)
+border_width_left = 24
+border_width_top = 16
+border_width_right = 9
+border_width_bottom = 2
+border_color = Color(0.35686275, 0.8784314, 1, 1)
+border_blend = true
+corner_radius_top_right = 96
+corner_radius_bottom_left = 96
+shadow_color = Color(0.35686275, 0.8784314, 1, 0.12156863)
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4st54"]
+content_margin_left = 58.0
+content_margin_right = 58.0
+bg_color = Color(0.003921569, 0, 0.12156863, 0)
+draw_center = false
+skew = Vector2(-0.225, 0)
+border_width_left = 24
+border_width_top = 16
+border_width_right = 9
+border_width_bottom = 2
+border_color = Color(0.35686275, 0.8784314, 1, 1)
+border_blend = true
+corner_radius_top_right = 96
+corner_radius_bottom_left = 96
+shadow_color = Color(0.35686275, 0.8784314, 1, 0.12156863)
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8geos"]
+content_margin_left = 58.0
+content_margin_right = 58.0
+bg_color = Color(0.003921569, 0, 0.12156863, 0)
+draw_center = false
+skew = Vector2(-0.225, 0)
+border_width_left = 24
+border_width_top = 16
+border_width_right = 9
+border_width_bottom = 2
+border_color = Color(0.35686275, 0.8784314, 1, 1)
+border_blend = true
+corner_radius_top_right = 96
+corner_radius_bottom_left = 96
+shadow_color = Color(0.35686275, 0.8784314, 1, 0.12156863)
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2tjs"]
+content_margin_left = 58.0
+content_margin_right = 58.0
+bg_color = Color(0.003921569, 0, 0.12156863, 0)
+draw_center = false
+skew = Vector2(-0.225, 0)
+border_width_left = 24
+border_width_top = 16
+border_width_right = 9
+border_width_bottom = 2
+border_color = Color(0.35686275, 0.8784314, 1, 1)
+border_blend = true
+corner_radius_top_right = 96
+corner_radius_bottom_left = 96
+shadow_color = Color(0.35686275, 0.8784314, 1, 0.12156863)
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q6o8o"]
+content_margin_left = 58.0
+content_margin_right = 58.0
+bg_color = Color(0.003921569, 0, 0.12156863, 0)
+draw_center = false
+skew = Vector2(-0.225, 0)
+border_width_left = 24
+border_width_top = 16
+border_width_right = 9
+border_width_bottom = 2
+border_color = Color(0.35686275, 0.8784314, 1, 1)
+border_blend = true
+corner_radius_top_right = 96
+corner_radius_bottom_left = 96
+shadow_color = Color(0.35686275, 0.8784314, 1, 0.12156863)
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwbqn"]
+bg_color = Color(0, 0.09411765, 0.28235295, 1)
+border_width_left = 16
+border_width_top = 16
+border_width_bottom = 8
+border_color = Color(0.35686275, 0.8784314, 1, 1)
+border_blend = true
+corner_radius_bottom_left = 140
+expand_margin_left = 140.0
+shadow_color = Color(0.35686275, 0.8784314, 1, 0.49411765)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kb3c7"]
+bg_color = Color(0, 0.09411765, 0.28235295, 1)
+border_width_left = 16
+border_width_top = 16
+border_width_bottom = 8
+border_color = Color(0.35686275, 0.8784314, 1, 1)
+border_blend = true
+corner_radius_bottom_left = 140
+expand_margin_left = 140.0
+shadow_color = Color(0.35686275, 0.8784314, 1, 0.49411765)
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3n2th"]
+bg_color = Color(0.047703147, 0.05573804, 0.083372734, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1hfwr"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7lf1r"]
+bg_color = Color(0.003921569, 0, 0.3372549, 1)
+
+[node name="主界面ui" type="Control" unique_id=1108183950]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("0")
+
+[node name="背景" type="TextureRect" parent="." unique_id=1044885876]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -420.0
+offset_bottom = 420.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4ieyd")
+
+[node name="模糊背景" type="ColorRect" parent="." unique_id=1646278936]
+material = SubResource("ShaderMaterial_2uen8")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="边缘" type="Control" parent="." unique_id=1023809493]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="上" type="Panel" parent="边缘" unique_id=1125016099]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 120.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_plgim")
+
+[node name="下" type="Panel" parent="边缘" unique_id=1032149416]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -120.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ro0ma")
+
+[node name="底部按钮排布" type="HBoxContainer" parent="边缘/下" unique_id=1355879842]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1300.0
+offset_top = -99.0
+offset_right = -48.0
+offset_bottom = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/separation = 48
+
+[node name="导入" type="Button" parent="边缘/下/底部按钮排布" unique_id=637381028]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_eow5t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4ieyd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ieyd")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4ieyd")
+text = "导入"
+
+[node name="规则" type="Button" parent="边缘/下/底部按钮排布" unique_id=1605035483]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_eow5t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4ieyd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ieyd")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4ieyd")
+text = "规则"
+
+[node name="模组" type="Button" parent="边缘/下/底部按钮排布" unique_id=625387343]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_eow5t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4st54")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4st54")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4st54")
+text = "模组"
+
+[node name="管理" type="Button" parent="边缘/下/底部按钮排布" unique_id=1637891712]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_eow5t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8geos")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8geos")
+theme_override_styles/focus = SubResource("StyleBoxFlat_8geos")
+text = "管理"
+
+[node name="设置" type="Button" parent="边缘/下/底部按钮排布" unique_id=411804080]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_eow5t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x2tjs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_x2tjs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_x2tjs")
+text = "设置"
+
+[node name="退出" type="Button" parent="边缘/下/底部按钮排布" unique_id=850918180]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_eow5t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q6o8o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_q6o8o")
+theme_override_styles/focus = SubResource("StyleBoxFlat_q6o8o")
+text = "退出"
+
+[node name="当前关卡成绩" type="Label" parent="." unique_id=1424586790]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -349.0
+offset_top = -412.0
+offset_bottom = -63.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 256
+text = "X"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="最高成绩" type="Label" parent="." unique_id=695445477]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -349.0
+offset_top = -78.0
+offset_right = -19.0
+offset_bottom = 37.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 84
+text = "Xxxxxxx"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="开始游戏" type="Button" parent="." unique_id=1404140182]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -530.0
+offset_top = 112.0
+offset_bottom = 252.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 96
+theme_override_styles/normal = SubResource("StyleBoxFlat_mwbqn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kb3c7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kb3c7")
+text = "开始游戏"
+
+[node name="通知" type="Control" parent="." unique_id=485283590]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="文本" type="Label" parent="通知" unique_id=601358552]
+custom_minimum_size = Vector2(480, 120)
+custom_maximum_size = Vector2(480, 120)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_top = 72.0
+offset_right = 480.0
+offset_bottom = 192.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_3n2th")
+theme_override_styles/focus = SubResource("StyleBoxFlat_3n2th")
+text = "通知临时占位文本"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="挡板1" type="Panel" parent="通知/文本" unique_id=93804601]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -0.00012207031
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1hfwr")
+
+[node name="挡板2" type="Panel" parent="通知/文本" unique_id=1194945880]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -0.00048828125
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7lf1r")

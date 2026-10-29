@@ -1,0 +1,17 @@
+[configuration]
+entry_symbol = "audio_analyzer_library_init"
+compatibility_minimum = "4.5"
+
+[libraries]
+windows.debug.x86_64 = "res://addons/audio_analyzer/bin/libaudio_analyzer.windows.template_debug.x86_64.dll"
+windows.template_debug.x86_64 = "res://addons/audio_analyzer/bin/libaudio_analyzer.windows.template_debug.x86_64.dll"
+windows.release.x86_64 = "res://addons/audio_analyzer/bin/libaudio_analyzer.windows.template_release.x86_64.dll"
+windows.template_release.x86_64 = "res://addons/audio_analyzer/bin/libaudio_analyzer.windows.template_release.x86_64.dll"
+android.debug.arm64 = "res://addons/audio_analyzer/bin/libaudio_analyzer.android.template_debug.arm64.so"
+android.template_debug.arm64 = "res://addons/audio_analyzer/bin/libaudio_analyzer.android.template_debug.arm64.so"
+android.release.arm64 = "res://addons/audio_analyzer/bin/libaudio_analyzer.android.template_release.arm64.so"
+android.template_release.arm64 = "res://addons/audio_analyzer/bin/libaudio_analyzer.android.template_release.arm64.so"
+ios.debug = "res://addons/audio_analyzer/bin/libaudio_analyzer.ios.template_debug.universal.dylib"
+ios.template_debug = "res://addons/audio_analyzer/bin/libaudio_analyzer.ios.template_debug.universal.dylib"
+ios.release = "res://addons/audio_analyzer/bin/libaudio_analyzer.ios.template_release.universal.dylib"
+ios.template_release = "res://addons/audio_analyzer/bin/libaudio_analyzer.ios.template_release.universal.dylib"

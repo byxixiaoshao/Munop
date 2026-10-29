@@ -1,0 +1,18 @@
+# Godot 4+ specific ignores
+.godot/
+
+# 本地备份与导出产物
+.backup/
+.output/
+
+# Android 构建产物(构建模板源文件保留, 含自定义 AndroidManifest)
+android/build/.gradle/
+android/build/build/
+android/build/local.properties
+
+# GDExtension 中间构建产物(运行所需二进制在 addons/audio_analyzer/bin)
+audio_analyzer/**/*.obj
+audio_analyzer/**/*.log
+audio_analyzer/**/.sconsign.dblite
+audio_analyzer/build/
+audio_analyzer/gdextension/bin/

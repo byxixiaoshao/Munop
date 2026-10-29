@@ -1,0 +1,209 @@
+[gd_scene format=3 uid="uid://d0p0i24dbtxy5"]
+
+[ext_resource type="Script" uid="uid://c0j5jdwj376ld" path="res://脚本/结算.gd" id="1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0cpa5"]
+bg_color = Color(0.047703147, 0.05573804, 0.083372734, 1)
+border_width_bottom = 4
+border_color = Color(0, 0.5058824, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3d6eo"]
+bg_color = Color(0.047703147, 0.05573804, 0.083372734, 1)
+border_width_top = 4
+border_color = Color(0, 0.5058824, 1, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3d6eo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0cpa5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0d2rw"]
+bg_color = Color(0.047703147, 0.05573804, 0.083372734, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_bottom = 4
+border_color = Color(0, 0.5058824, 1, 1)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0d2rw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2uqm1"]
+
+[node name="结算" type="Control" unique_id=927594680]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+script = ExtResource("1")
+
+[node name="边缘" type="Control" parent="." unique_id=1446725635]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="上" type="Panel" parent="边缘" unique_id=1914431917]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 120.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0cpa5")
+
+[node name="下" type="Panel" parent="边缘" unique_id=300131140]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -120.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_3d6eo")
+
+[node name="Label" type="Label" parent="边缘/下" unique_id=312891164]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -224.0
+offset_top = -44.0
+offset_right = 224.0
+offset_bottom = 44.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "点击任意处继续"
+
+[node name="左侧" type="Control" parent="." unique_id=1574574233]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_bottom = -20.0
+grow_vertical = 2
+
+[node name="整体评价" type="Label" parent="左侧" unique_id=1511075385]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -264.0
+offset_right = 349.0
+offset_bottom = 85.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 256
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3d6eo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0cpa5")
+text = "X"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="分数" type="Label" parent="左侧" unique_id=1041030200]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 24.0
+offset_top = 120.0
+offset_right = 394.0
+offset_bottom = 252.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 96
+text = "xxxxxxx"
+
+[node name="音符块数" type="Label" parent="左侧" unique_id=886965202]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 24.0
+offset_top = 260.0
+offset_right = 290.0
+offset_bottom = 359.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 72
+text = "xxx/xxx"
+
+[node name="右侧" type="Control" parent="." unique_id=1595544916]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -220.0
+offset_bottom = -220.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="歌名" type="Label" parent="右侧" unique_id=1275039897]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -184.0
+offset_bottom = -95.99988
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "这是歌名"
+
+[node name="列表背景" type="Panel" parent="右侧" unique_id=1135983011]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -65.0
+offset_bottom = 285.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0d2rw")
+
+[node name="纵向排布" type="VBoxContainer" parent="右侧/列表背景" unique_id=1292866499]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="标题" type="Label" parent="右侧/列表背景/纵向排布" unique_id=947424374]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0d2rw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2uqm1")
+text = "历史成绩"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="横向排布" type="HBoxContainer" parent="右侧/列表背景/纵向排布" unique_id=1515058378]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="序号" type="VBoxContainer" parent="右侧/列表背景/纵向排布/横向排布" unique_id=1375084041]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="分数排布" type="VBoxContainer" parent="右侧/列表背景/纵向排布/横向排布" unique_id=981153348]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 4.0
+alignment = 1
