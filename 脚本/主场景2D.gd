@@ -201,12 +201,10 @@ func _aim_angle() -> float:
 		_joy_angle = stick.angle()
 	if _joy_aim:
 		return _joy_angle
-	# 移动端虚拟摇杆(触屏生成), 激活期间输出非零 → 接管挡板
-	var vj: VirtualJoystick = null
-	if ui:
-		vj = ui.get_node_or_null("移动端摇杆") as VirtualJoystick
-	if vj and vj.output.length() > 0.25:
-		return vj.output.angle()
+	# 移动端虚拟摇杆(原生 VirtualJoystick): 激活期间模拟 ui_* 方向动作, 读取合成向量
+	var vstick := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	if vstick.length() > 0.25:
+		return vstick.angle()
 	# 舞台水平居中后节点带偏移, 必须用局部坐标换算
 	return (get_local_mouse_position() - CENTER).angle()
 

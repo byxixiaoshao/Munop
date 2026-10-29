@@ -10,6 +10,13 @@ android/build/.gradle/
 android/build/build/
 android/build/local.properties
 
+# Windows / Office 临时文件
+~*
+*.TMP
+
+# Android 导出写入模板 assets 的构建产物(每次导出重新生成)
+android/build/src/main/assets/
+
 # GDExtension 中间构建产物(运行所需二进制在 addons/audio_analyzer/bin)
 audio_analyzer/**/*.obj
 audio_analyzer/**/*.log
